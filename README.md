@@ -29,7 +29,7 @@ My goal is to gain hands-on experience with real-world security tools, understan
 | Windows 10 | Windows 10 | Endpoint Monitoring |
 | Network Lab | Ubuntu Server 22.04 | Routing, Switching, SSH and Firewall |
 | AD Server | Windows Server | Active Directory and Domain Services |
-| Additional Endpoint | Planned | Linux or Windows Monitoring |
+| Windows 10 2 | Windows 10 |  Windows Monitoring |
 
 ## 🖥️ Lab Architecture
 
