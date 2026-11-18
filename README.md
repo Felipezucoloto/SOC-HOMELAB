@@ -35,7 +35,8 @@ My goal is to gain hands-on experience with real-world security tools, understan
 
 The environment is composed of interconnected virtual machines responsible for different infrastructure and security functions.
 
-![Lab Architecture](screenshots/network-topology.png)
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/676110a8-96fe-413c-a46d-439a985607a9" />
+
 
 ## 🔍 Security Monitoring & SIEM
 
