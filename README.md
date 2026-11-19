@@ -58,7 +58,7 @@ Main activities:
 
 ### Connected Agents
 
-![Wazuh Agents] <img width="956" height="735" alt="Dispositivos" src="https://github.com/user-attachments/assets/80569654-03b4-4bb0-b1a8-4b48af9f8fef" />
+ <img width="956" height="735" alt="Dispositivos" src="https://github.com/user-attachments/assets/80569654-03b4-4bb0-b1a8-4b48af9f8fef" />
 
 
 ## 🪟 Windows Security
