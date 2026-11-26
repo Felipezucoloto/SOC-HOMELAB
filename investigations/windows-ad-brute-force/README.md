@@ -13,7 +13,7 @@ Unlike the [SSH brute force case](../brute-force/README.md), which relied on nat
 | Component | Description |
 |---|---|
 | SIEM | Wazuh 4.14.10 |
-| Attack Machine | Kali Linux (`192.168.56.113`) |
+| Attack Machine | Kali Linux (`192.168.56.114`) |
 | Target System | Windows Server — Domain Controller `DESKTOP-VR0EOHC` (`192.168.56.107`) |
 | Domain | `CORP.LOCAL` |
 | Target Account | `CORP.LOCAL\joao.teste` (lab test user) |
@@ -60,7 +60,7 @@ The rule fired as expected during the simulation.
 
 | Indicator | Observed Value |
 |---|---|
-| Source IP | 192.168.56.113 |
+| Source IP | 192.168.56.114 |
 | Target host | DESKTOP-VR0EOHC (Domain Controller) |
 | Target account | joao.teste |
 | Windows Event ID | 4625 (failures) / 4624 (success) |
