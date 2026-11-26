@@ -22,7 +22,7 @@ A controlled SSH brute-force simulation was executed from Kali Linux against the
 
 The simulation generated repeated authentication failures, producing SSH security events on the target system.
 
-**Evidence:** `evidence/attack-execution.png`
+**Evidence:** [`evidence/evidence_bruteforcessh_kali.png`](evidence/evidence_bruteforcessh_kali.png) — Hydra execution against `ssh://192.168.56.112`
 
 ## 4. Detection and Monitoring
 
@@ -36,9 +36,7 @@ The initial authentication failures were identified by the native Wazuh rule:
 
 The Wazuh ruleset also correlated repeated authentication failures and generated a brute-force detection alert.
 
-**Evidence:**
-- `evidence/wazuh-alerts.png`
-- `evidence/brute-force-detection.png`
+**Evidence:** [`evidence/evidence_bruteforcessh_wazuh.png`](evidence/evidence_bruteforcessh_wazuh.png) — rule 5760 alert on agent `LINUX-SSH`
 
 ## 5. Event Analysis
 
@@ -54,7 +52,7 @@ A total of 3,144 authentication failure alerts associated with the simulation so
 
 The source IP was identified through JSON log analysis using command-line tools.
 
-**Evidence:** `evidence/source-ip-analysis.png`
+**Logs:** [`logs/ssh-authentication-sample.json`](logs/ssh-authentication-sample.json) — sample of the Wazuh alerts used in the analysis
 
 ## 6. Investigation Findings
 
