@@ -1,0 +1,21 @@
+<!--
+  DET-002 — Successful logon after multiple failures from the same source
+  MITRE ATT&CK: T1110 (Brute Force), T1078 (Valid Accounts)
+  Depends on rule 100100 (DET-001).
+  Target file on the manager: /var/ossec/etc/rules/local_rules.xml
+  Status: in development — not tested yet
+-->
+<group name="local,windows,authentication,">
+
+  <rule id="100101" level="12" timeframe="300">
+    <if_group>authentication_success</if_group>
+    <if_matched_sid>100100</if_matched_sid>
+    <same_field>win.eventdata.ipAddress</same_field>
+    <description>Successful logon after multiple failures from the same source (possible compromised credential)</description>
+    <mitre>
+      <id>T1110</id>
+      <id>T1078</id>
+    </mitre>
+  </rule>
+
+</group>
