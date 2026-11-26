@@ -52,10 +52,6 @@ Main activities:
 - File Integrity Monitoring (FIM).
 - Threat Hunting.
 
-### Wazuh Dashboard
-
-![Wazuh Dashboard](screenshots/wazuh-dashboard.png)
-
 ### Connected Agents
 
  <img width="956" height="735" alt="Dispositivos" src="https://github.com/user-attachments/assets/80569654-03b4-4bb0-b1a8-4b48af9f8fef" />
@@ -119,18 +115,30 @@ Kali Linux is used for controlled security testing and attack simulation.
 - SSH
 - VirtualBox
 
+## 🔎 Investigations
+
+| Case | Target | Key finding | ATT&CK |
+|---|---|---|---|
+| [SSH Brute Force](investigations/brute-force/README.md) | Ubuntu Server (SSH) | 3,144 authentication failures from a single source, detected by native Wazuh rules | T1110.001 |
+| [Windows / AD Brute Force](investigations/windows-ad-brute-force/README.md) | Domain Controller (SMB) | 30 failed logons followed by a successful logon from the same source 38 seconds later — likely compromised credential | T1110.001, T1078.002 |
+
+## 🛠️ Detections
+
+Custom Wazuh rules and their status: [detections/README.md](detections/README.md)
+
 ## 📂 Repository Structure
 
 ```text
-cybersecurity-homelab/
-├── docs/
-├── screenshots/
-├── wazuh/
-├── windows/
-├── network/
-├── kali/
+SOC-HOMELAB/
 ├── detections/
+│   ├── README.md          # Rule index (ATT&CK, status, investigation)
+│   └── wazuh/             # Custom Wazuh rules (local_rules.xml)
 ├── investigations/
+│   ├── brute-force/              # SSH brute force case
+│   └── windows-ad-brute-force/   # Windows / AD brute force case
+│       ├── README.md
+│       ├── evidence/      # Screenshots
+│       └── logs/          # Exported alerts
 └── README.md
 ```
 
